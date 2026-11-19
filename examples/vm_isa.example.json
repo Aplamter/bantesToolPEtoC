@@ -1,0 +1,11 @@
+{
+  "registers": 4,
+  "byte_order": "little",
+  "opcodes": [
+    {"code": 1, "op": "const", "fields": {"dst": "u8", "value": "i64"}},
+    {"code": 2, "op": "add", "fields": {"dst": "u8", "a": "u8", "b": "u8"}},
+    {"code": 3, "op": "ret", "fields": {"src": "u8"}},
+    {"code": 4, "op": "jmp", "fields": {"target": "u32"}},
+    {"code": 5, "op": "jz", "fields": {"cond": "u8", "target": "u32"}}
+  ]
+}

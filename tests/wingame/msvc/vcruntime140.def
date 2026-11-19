@@ -1,0 +1,10 @@
+LIBRARY vcruntime140.dll
+EXPORTS
+__CxxFrameHandler3
+__CxxFrameHandler4
+_CxxThrowException
+__std_terminate
+__C_specific_handler
+memcpy
+memset
+??_7type_info@@6B@ DATA

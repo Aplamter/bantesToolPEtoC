@@ -1,0 +1,26 @@
+{
+  "functions": [
+    {"name": "update_score", "calls": ["calculate_bonus", "game_get_score"]},
+    {"name": "calculate_bonus", "calls": []},
+    {"name": "load_level", "calls": ["game_load_level", "game_notify_level_loaded"]}
+  ],
+  "external_apis": [
+    {
+      "name": "game_get_score",
+      "abi": {
+        "return": "int",
+        "params": "int player_id",
+        "args": "player_id",
+        "fallback": "-1"
+      }
+    },
+    {
+      "name": "game_notify_level_loaded",
+      "abi": {
+        "return": "void",
+        "params": "int level_id",
+        "args": "level_id"
+      }
+    }
+  ]
+}
